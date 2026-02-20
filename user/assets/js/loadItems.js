@@ -13,7 +13,7 @@ fetch(BASE + "projects.json")
               <h3>${p.title}</h3>
               <p>${p.description}</p>
               <small>By ${p.author}</small><br>
-              <a href="view.html?file=${file}">Open In Fullscreen</a>
+              <a href="view.html?file=${file}">Open</a>
             </div>
           `;
         });
