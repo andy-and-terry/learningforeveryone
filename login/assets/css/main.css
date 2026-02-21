@@ -27,9 +27,3 @@ input[type="submit"]:hover,
 input[type="reset"]:hover {
   filter: brightness(1.1);
 }
-
-/* Links: red text */
-a,
-a:visited {
-  color: red;
-}
