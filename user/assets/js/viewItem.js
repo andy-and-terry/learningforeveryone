@@ -2,9 +2,9 @@ const params = new URLSearchParams(window.location.search);
 const file = params.get("file");
 
 if (!file) {
-  document.body.innerHTML = "Item not found.";
+  document.body.innerHTML = "Item not found."; //404
 } else {
-  fetch("projects/" + file)
+  fetch("projects/" + file) //load the specified project
     .then(r => r.json())
     .then(p => {
       document.getElementById("project").innerHTML = `
