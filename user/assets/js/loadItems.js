@@ -1,8 +1,12 @@
-const BASE = "projects/";
-fetch(BASE + "projects.json")
+/*
+This is used to load projects
+on index.html
+*/
+const BASE = "projects/"; //projects directory
+fetch(BASE + "projects.json") //fetch allprojects json
   .then(res => res.json())
   .then(files => {
-    const feed = document.getElementById("feed");
+    const feed = document.getElementById("feed"); //HTML cards
     files.forEach(file => {
       fetch(BASE + file)
         .then(r => r.json())
