@@ -1,19 +1,23 @@
+/* bagkground/text */
 body {
-  background: #0d0d0d;
+  background: #0d0d0d; /*background*/
   color: white;
-  font-family: system-ui, sans-serif;
-  padding: 20px;
+  font-family: system-ui, sans-serif; /*text font*/
+  padding: 20px; /*text padding*/
 }
+/* card div id */
 .card {
   background: #1a1a1a;
   padding: 16px;
   margin: 20px 0;
   border-radius: 10px;
 }
+/* images */
 img {
   max-width: 100%;
   border-radius: 6px;
 }
+/* a href */
 a {
   color: #00ffee;
   text-decoration: none;
