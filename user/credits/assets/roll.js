@@ -1,0 +1,3 @@
+const var1 = nothing here yet...
+
+document.getElementById("currenttext").textContent = var1;
