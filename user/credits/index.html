@@ -13,131 +13,236 @@
 	<hr>
 	<section id="credits">
 	<p>
-		CREDITS
+This document serves as the official credits, acknowledgements, explanatory notes,
+contextual background, and general disclosure statement for this platform.
+</p>
 
-Introduction
+<p>
+The length of this credits section is intentional. It exists to provide transparency,
+clarity, and an unambiguous description of the platform’s purpose, design philosophy,
+technical implementation, and limitations.
+</p>
 
-This document serves as the official credits, acknowledgements, explanatory notes, contextual background, and general disclosure statement for this platform. The purpose of this credits section is to provide transparency regarding the design philosophy, technical implementation, operational scope, and limitations of the system.
+<hr>
 
-This credits section is intentionally detailed and expansive. Its length reflects a commitment to clarity, completeness, and the avoidance of ambiguity.
+<h2>Platform Overview</h2>
 
-Platform Purpose
+<p>
+This platform was designed, developed, and maintained as a lightweight, browser-based
+homework sharing and information distribution system. Its primary purpose is to provide
+a centralized, predictable, and low-friction location where students can view homework
+assignments, announcements, and related educational materials.
+</p>
 
-This platform exists to provide a simple, centralized location for the distribution of homework assignments, announcements, and related educational information. It is not designed to be an interactive social network, a learning management system, or a monitoring tool.
+<p>
+The platform is not designed to function as a learning management system, a social
+network, or a monitoring tool. It deliberately avoids complexity in favor of clarity
+and reliability.
+</p>
 
-The platform prioritizes access to information over interaction, enforcement, or automation. It is intentionally minimal, predictable, and resistant to unnecessary complexity.
+<hr>
 
-Design Philosophy
+<h2>Design Philosophy</h2>
 
-The design philosophy behind this platform emphasizes restraint. Features are added only when they provide clear value. Features are removed or avoided when they introduce unnecessary cognitive load, maintenance burden, or potential failure points.
+<p>
+The design philosophy behind this platform emphasizes restraint and intentional
+simplicity. Features are added only when they provide clear value and are avoided when
+they introduce unnecessary complexity, maintenance overhead, or cognitive load.
+</p>
 
-The absence of certain features is not an oversight. It is a deliberate choice.
+<p>
+The absence of certain features is not accidental. It is a deliberate design choice.
+</p>
 
-This includes, but is not limited to:
-- The absence of submission uploads
-- The absence of grading systems
-- The absence of analytics and tracking
-- The absence of automated enforcement mechanisms
-- The absence of engagement metrics
+<ul>
+  <li>No homework submission uploads</li>
+  <li>No grading or scoring systems</li>
+  <li>No automated reminders</li>
+  <li>No engagement metrics</li>
+  <li>No analytics or tracking</li>
+  <li>No behavior monitoring</li>
+</ul>
 
-This platform is designed to assist, not to supervise.
+<p>
+This platform exists to assist, not to supervise.
+</p>
 
-Development Approach
+<hr>
 
-The platform was developed incrementally, with careful attention paid to each component’s role within the overall system. Rather than adopting a monolithic or framework-heavy approach, the platform relies on widely supported, standard web technologies.
+<h2>Concept and Development</h2>
 
-This approach ensures that the platform remains accessible to future maintainers, understandable to readers of the source code, and resilient to changes in external dependencies.
+<p>
+The conceptual design, system architecture, and implementation were created by the
+platform author. Development followed an iterative approach, with each change evaluated
+based on clarity, maintainability, and long-term stability.
+</p>
 
-Each design decision was evaluated based on the following criteria:
-- Does it improve clarity?
-- Does it reduce risk?
-- Does it simplify usage?
-- Does it avoid unnecessary abstraction?
+<p>
+Rather than relying on complex frameworks or backend infrastructure, the platform was
+designed to operate entirely within the constraints of static hosting. This reduces
+failure points and simplifies deployment.
+</p>
 
-If the answer to these questions was not clearly affirmative, the feature was not included.
+<hr>
 
-Technology Overview
+<h2>Technical Architecture</h2>
 
-The platform is built using standard web technologies.
+<p>
+The platform is built using standard web technologies that are widely supported across
+modern browsers.
+</p>
 
-HTML is used to define content structure, semantic meaning, and document hierarchy.
+<ul>
+  <li>HTML is used to define structure and content hierarchy.</li>
+  <li>CSS is used to manage layout, typography, and visual consistency.</li>
+  <li>JavaScript is used for interactivity and dynamic behavior.</li>
+</ul>
 
-CSS is used to manage layout, typography, spacing, and visual organization. Styling decisions prioritize readability and consistency.
+<p>
+All application logic executes on the client side. No server-side code is required for
+normal operation.
+</p>
 
-JavaScript is used to handle dynamic behavior, including user interface updates, basic access control logic, and client-side data handling.
+<hr>
 
-No server-side code executes as part of the platform’s core functionality.
+<h2>Hosting and Deployment</h2>
 
-Hosting Model
+<p>
+The platform is hosted using GitHub Pages. This hosting model allows the site to be
+served securely over HTTPS without the need for dedicated servers, databases, or
+runtime environments.
+</p>
 
-The platform is hosted using GitHub Pages. This hosting model allows the platform to be served via HTTPS without requiring server-side infrastructure, databases, or runtime environments.
+<p>
+This deployment approach prioritizes reliability, transparency, and ease of
+maintenance.
+</p>
 
-All application logic executes within the user’s browser. The platform does not process requests on a backend server.
+<hr>
 
-This hosting model was chosen for its reliability, transparency, and low maintenance requirements.
+<h2>Security Considerations</h2>
 
-Security Philosophy
+<p>
+Security within this platform is approached through minimization rather than
+escalation. The platform avoids storing sensitive personal information wherever
+possible.
+</p>
 
-Security within this platform is approached through minimization rather than escalation.
+<p>
+Login mechanisms exist solely for basic access control and user experience separation.
+They are not intended to function as high-security authentication systems.
+</p>
 
-Rather than attempting to create an illusion of absolute security within an inherently client-side environment, the platform minimizes the consequences of misuse by reducing the value and sensitivity of stored data.
+<p>
+Passwords are processed using salted hashing techniques. Plaintext passwords are never
+stored. Salts are generated randomly and stored as required for verification.
+</p>
 
-Passwords are processed using salted hashing techniques. Plaintext passwords are never stored. Salts are generated randomly and stored as required for verification.
+<p>
+All security decisions are made with the understanding that client-side code is
+inspectable.
+</p>
 
-The platform assumes that client-side code may be inspected. This assumption informs all security-related design decisions.
+<hr>
 
-Privacy Philosophy
+<h2>Privacy Considerations</h2>
 
-The platform does not collect analytics, behavioral metrics, or personal tracking data.
+<p>
+This platform does not collect analytics, usage metrics, or behavioral data. No
+advertising networks are used. No tracking scripts are embedded.
+</p>
 
-No advertising networks are used. No tracking scripts are embedded. No cookies are deployed for analytics purposes.
+<p>
+Any data stored locally within the user’s browser is used solely to support basic
+session functionality and is not transmitted to external servers.
+</p>
 
-Any data stored locally within the user’s browser is used solely to support basic session functionality and user experience continuity.
+<p>
+Privacy is preserved by design rather than by policy alone.
+</p>
 
-This platform values privacy by design rather than privacy by policy.
+<hr>
 
-Responsibility and Accountability
+<h2>Content Responsibility</h2>
 
-This platform serves as a reference point for information. It does not guarantee completeness, accuracy, or timeliness of posted content.
+<p>
+Homework assignments, announcements, and external links displayed on the platform are
+provided by teachers or administrators. The platform itself does not generate
+educational content.
+</p>
 
-Students remain responsible for checking assignments, managing deadlines, and completing work.
+<p>
+The accuracy, relevance, and appropriateness of posted materials remain the
+responsibility of the content providers.
+</p>
 
-Teachers remain responsible for the accuracy and clarity of the materials they provide.
+<hr>
 
-The platform does not replace communication, instruction, or human judgment.
+<h2>User Responsibilities</h2>
 
-Limitations
+<p>
+Students are responsible for checking assignments, managing deadlines, and completing
+work as required. The platform does not enforce compliance.
+</p>
 
-This platform does not provide messaging, file uploads, grading, feedback systems, or progress tracking.
+<p>
+Teachers are responsible for ensuring that posted materials are accurate and clearly
+communicated.
+</p>
 
-These limitations are intentional.
+<hr>
 
-By limiting scope, the platform achieves greater stability, predictability, and ease of use.
+<h2>Limitations</h2>
 
-Acknowledgements
+<p>
+This platform does not provide messaging, file uploads, grading systems, feedback
+mechanisms, or progress tracking.
+</p>
 
-This project acknowledges the broader web development ecosystem, including the evolution of open standards, browser APIs, and publicly available documentation.
+<p>
+These limitations are intentional and reflect the platform’s focused scope.
+</p>
 
-The continued development of the web platform enables projects of this nature to exist without reliance on proprietary systems.
+<hr>
 
-Maintenance and Longevity
+<h2>Acknowledgements</h2>
 
-The platform may be updated, modified, refactored, expanded, reduced, or discontinued at any time.
+<p>
+This project acknowledges the broader web development ecosystem, including open web
+standards, browser APIs, and publicly available documentation that make projects of this
+nature possible.
+</p>
 
-There is no guarantee of long-term availability.
+<hr>
 
-Features may change as requirements evolve.
+<h2>Maintenance and Updates</h2>
 
-Final Disclaimer
+<p>
+The platform may be updated, modified, refactored, expanded, reduced, or discontinued
+at any time without prior notice.
+</p>
 
-This platform is provided on an “as-is” basis.
+<p>
+There is no guarantee of long-term availability or feature permanence.
+</p>
 
-No warranties, guarantees, or assurances are provided.
+<hr>
 
-Use of this platform constitutes acceptance of its limitations and design philosophy.
-	</p>
+<h2>Final Disclaimer</h2>
+
+<p>
+This platform is provided on an “as-is” basis. No warranties, guarantees, or assurances
+are expressed or implied.
+</p>
+
+<p>
+By using this platform, users acknowledge its limitations and accept responsibility for
+their own actions.
+</p>
+<br>
+<p><strong>End of Credits</strong></p>
+
+	</section>
 	<hr>
 	<button id="back">Back</button>
 </body>
-
-
