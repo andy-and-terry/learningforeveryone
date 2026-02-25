@@ -106,6 +106,42 @@ By using this platform, users acknowledge its limitations and accept responsibil
 
 End of Credits
 `
+const LINES_VISIBLE = 20;
+const SCROLL_INTERVAL = 1200;
 
+const lines = creditsText.trim().split("\n");
+let offset = 0;
 
-document.getElementById("currenttext").textContent = var1;
+function render() {
+  let output = [];
+
+  for (let i = 0; i < LINES_VISIBLE; i++) {
+    const lineIndex = offset + i;
+    if (lineIndex < lines.length) {
+      output.push(lines[lineIndex]);
+    } else {
+      output.push(""); // blank line when out of text
+    }
+  }
+
+  document.getElementById("creditsText").textContent =
+    output.join("\n");
+}
+
+function roll() {
+  offset++;
+
+  // stop when the top line has fully scrolled past the end
+  if (offset > lines.length) {
+    clearInterval(timer);
+    return;
+  }
+
+  render();
+}
+
+// initial render
+render();
+
+// start rolling
+const timer = setInterval(roll, SCROLL_INTERVAL);
