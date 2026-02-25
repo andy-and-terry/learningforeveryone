@@ -4,8 +4,6 @@
 	<meta charset="UTF-8">
 	<script defer src="assets/buttons.js"></script>
 	<script defer src="assets/drc.js"></script>
-	<script defer src="assets/roll.js"></script>
-	<link rel="stylesheet" href="assets/roll.css">
 	<link rel="stylesheet" href="assets/buttons.css">
 	<link rel="stylesheet" href="assets/text.css">
 	<title>Credits</title>
@@ -13,8 +11,133 @@
 <body>
 	<h1>Credits</h1>
 	<hr>
-	<div id="creditsText"></div>
-	<button id="back">Back</button>
+	<section id="credits">
+	<p>
+		CREDITS
 
+Introduction
+
+This document serves as the official credits, acknowledgements, explanatory notes, contextual background, and general disclosure statement for this platform. The purpose of this credits section is to provide transparency regarding the design philosophy, technical implementation, operational scope, and limitations of the system.
+
+This credits section is intentionally detailed and expansive. Its length reflects a commitment to clarity, completeness, and the avoidance of ambiguity.
+
+Platform Purpose
+
+This platform exists to provide a simple, centralized location for the distribution of homework assignments, announcements, and related educational information. It is not designed to be an interactive social network, a learning management system, or a monitoring tool.
+
+The platform prioritizes access to information over interaction, enforcement, or automation. It is intentionally minimal, predictable, and resistant to unnecessary complexity.
+
+Design Philosophy
+
+The design philosophy behind this platform emphasizes restraint. Features are added only when they provide clear value. Features are removed or avoided when they introduce unnecessary cognitive load, maintenance burden, or potential failure points.
+
+The absence of certain features is not an oversight. It is a deliberate choice.
+
+This includes, but is not limited to:
+- The absence of submission uploads
+- The absence of grading systems
+- The absence of analytics and tracking
+- The absence of automated enforcement mechanisms
+- The absence of engagement metrics
+
+This platform is designed to assist, not to supervise.
+
+Development Approach
+
+The platform was developed incrementally, with careful attention paid to each component’s role within the overall system. Rather than adopting a monolithic or framework-heavy approach, the platform relies on widely supported, standard web technologies.
+
+This approach ensures that the platform remains accessible to future maintainers, understandable to readers of the source code, and resilient to changes in external dependencies.
+
+Each design decision was evaluated based on the following criteria:
+- Does it improve clarity?
+- Does it reduce risk?
+- Does it simplify usage?
+- Does it avoid unnecessary abstraction?
+
+If the answer to these questions was not clearly affirmative, the feature was not included.
+
+Technology Overview
+
+The platform is built using standard web technologies.
+
+HTML is used to define content structure, semantic meaning, and document hierarchy.
+
+CSS is used to manage layout, typography, spacing, and visual organization. Styling decisions prioritize readability and consistency.
+
+JavaScript is used to handle dynamic behavior, including user interface updates, basic access control logic, and client-side data handling.
+
+No server-side code executes as part of the platform’s core functionality.
+
+Hosting Model
+
+The platform is hosted using GitHub Pages. This hosting model allows the platform to be served via HTTPS without requiring server-side infrastructure, databases, or runtime environments.
+
+All application logic executes within the user’s browser. The platform does not process requests on a backend server.
+
+This hosting model was chosen for its reliability, transparency, and low maintenance requirements.
+
+Security Philosophy
+
+Security within this platform is approached through minimization rather than escalation.
+
+Rather than attempting to create an illusion of absolute security within an inherently client-side environment, the platform minimizes the consequences of misuse by reducing the value and sensitivity of stored data.
+
+Passwords are processed using salted hashing techniques. Plaintext passwords are never stored. Salts are generated randomly and stored as required for verification.
+
+The platform assumes that client-side code may be inspected. This assumption informs all security-related design decisions.
+
+Privacy Philosophy
+
+The platform does not collect analytics, behavioral metrics, or personal tracking data.
+
+No advertising networks are used. No tracking scripts are embedded. No cookies are deployed for analytics purposes.
+
+Any data stored locally within the user’s browser is used solely to support basic session functionality and user experience continuity.
+
+This platform values privacy by design rather than privacy by policy.
+
+Responsibility and Accountability
+
+This platform serves as a reference point for information. It does not guarantee completeness, accuracy, or timeliness of posted content.
+
+Students remain responsible for checking assignments, managing deadlines, and completing work.
+
+Teachers remain responsible for the accuracy and clarity of the materials they provide.
+
+The platform does not replace communication, instruction, or human judgment.
+
+Limitations
+
+This platform does not provide messaging, file uploads, grading, feedback systems, or progress tracking.
+
+These limitations are intentional.
+
+By limiting scope, the platform achieves greater stability, predictability, and ease of use.
+
+Acknowledgements
+
+This project acknowledges the broader web development ecosystem, including the evolution of open standards, browser APIs, and publicly available documentation.
+
+The continued development of the web platform enables projects of this nature to exist without reliance on proprietary systems.
+
+Maintenance and Longevity
+
+The platform may be updated, modified, refactored, expanded, reduced, or discontinued at any time.
+
+There is no guarantee of long-term availability.
+
+Features may change as requirements evolve.
+
+Final Disclaimer
+
+This platform is provided on an “as-is” basis.
+
+No warranties, guarantees, or assurances are provided.
+
+Use of this platform constitutes acceptance of its limitations and design philosophy.
+	</p>
+	<hr>
+	<button id="back">Back</button>
 </body>
+
 
